@@ -5,7 +5,11 @@ export const postData = async (data: UserData) => {
   const user = Object.assign(data, {
     rating: { current_account: 0, payroll: 0, payment: 0 },
   });
+
   try {
+  let {data} = await axios.get("http://localhost:3001/users");
+  let userData = data.find((singleUser:any)=>singleUser.email === user.email)
+   if(userData) return alert("this email already existed please login! ")
     await axios.post("http://localhost:3001/users", user);
     alert("create account successfully");
   } catch (err) {
