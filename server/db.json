@@ -1,0 +1,47 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "id": "c84f344a-8d0e-4c82-9436-51dd70d6ac9e",
+      "full_name": "shiva",
+      "date_incorporation": "2022-07-18",
+      "email": "shiva@gmail.com",
+      "password": "123",
+      "confirm_pass": "123",
+      "rating": {
+        "current_account": 5,
+        "payroll": 1,
+        "payment": 5
+      }
+    },
+    {
+      "id": "3e402fcb-636d-492c-86dc-9d582d528e47",
+      "full_name": "gopi",
+      "date_incorporation": "2022-07-21",
+      "email": "gopimudumal99@gmail.com",
+      "password": "123",
+      "confirm_pass": "123",
+      "rating": {
+        "current_account": 0,
+        "payroll": 0,
+        "payment": 0
+      }
+    }
+  ]
+}
